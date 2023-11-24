@@ -26,7 +26,7 @@ export function LoginUser() {
           className="p-3 rounded-lg border w-full mb-2"
         />
         <div className="text-center">
-          <button className="p-3 bg-green-400 text-white rounded-lg font-bold">
+          <button className="p-3 bg-green-400 text-white rounded-lg font-bold w-full">
             Login
           </button>
         </div>
