@@ -6,6 +6,7 @@ import { Men } from '../pages/Men';
 import { Women } from '../pages/Women';
 import { Register } from '../pages/Register';
 import { LoginUser } from '../pages/LoginUser';
+import { DetailProduct } from '../pages/DetailProduct';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/women" element={<Women />}/>
             <Route path="/register" element={<Register />}/>
             <Route path="/login" element={<LoginUser />}/>
+            <Route path="/detail/:id" element={<DetailProduct />}/>
           </Routes>
         </BrowserRouter>
       </>

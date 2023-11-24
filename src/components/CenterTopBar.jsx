@@ -8,7 +8,7 @@ export function CenterTopBar(props) {
   };
 
   return (
-    <div className="flex flex-row justify-between items-center">
+    <div className="flex flex-row justify-between items-center pe-10">
       <div>
         <input
           className="border border border-green-200 rounded-md p-1 outline-none"
@@ -16,15 +16,16 @@ export function CenterTopBar(props) {
           onChange={onChangeSearch}
         />
       </div>
-      <div className="flex gap-5 font-medium">
+      <div className="flex gap-10 font-medium">
         <Link to={'/login'}>
           <div>Login</div>
         </Link>
         <Link to={'/register'}>
           <div>Register</div>
         </Link>
-        <div className="text-green-500">
-          <FontAwesomeIcon icon={faBasketShopping} />
+        <div className="text-green-500 relative">
+          <FontAwesomeIcon icon={faBasketShopping} size={'100 px'}/>
+          <span className='text-xs text-green-300 absolute top-[-8px] p-1'>{props.Counting}</span>
         </div>
       </div>
     </div>
